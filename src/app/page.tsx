@@ -8,14 +8,14 @@ export default function Home() {
         aria-label="Introduction"
         className="relative flex min-h-dvh flex-col items-center justify-center px-6 text-center"
       >
-        <FadeIn className="flex flex-col items-center gap-6">
-          <h1 className="font-serif text-5xl font-medium tracking-tight text-navy sm:text-7xl">
+        <FadeIn className="flex flex-col items-center gap-7">
+          <h1 className="font-serif text-6xl font-medium tracking-tight text-navy sm:text-8xl">
             Traditio Co.
           </h1>
-          <p className="max-w-xl text-base font-light tracking-wide text-charcoal/70 sm:text-lg">
+          <p className="max-w-xl font-serif text-xl italic tracking-wide text-navy/70 sm:text-2xl">
             Building for the next thousand years.
           </p>
-          <Divider className="mt-2" />
+          <Divider className="mt-3" />
         </FadeIn>
 
         <FadeIn
@@ -37,12 +37,12 @@ export default function Home() {
               Our Mission
             </h2>
             <p className="text-base leading-relaxed text-charcoal/80 sm:text-lg">
-              Traditio Co. exists to equip men of God to faithfully steward their
-              faith, family, work, wealth, and influence for generations to come.
+              Traditio Co. exists to build men of God who build legacies that
+              their children&rsquo;s children are proud to inherit.
             </p>
           </FadeIn>
 
-          <FadeIn className="flex flex-col items-center gap-6 text-center">
+          <FadeIn className="flex flex-col items-center gap-6 border-t border-navy/10 pt-24 text-center">
             <h2 className="font-serif text-3xl text-navy sm:text-4xl">
               What is Traditio?
             </h2>

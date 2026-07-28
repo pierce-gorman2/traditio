@@ -4,9 +4,13 @@ type DividerProps = {
 
 export default function Divider({ className = "" }: DividerProps) {
   return (
-    <hr
+    <div
       aria-hidden="true"
-      className={`h-px w-16 border-0 bg-gold ${className}`}
-    />
+      className={`flex items-center gap-3 ${className}`}
+    >
+      <span className="h-px w-10 bg-gold/60" />
+      <span className="h-1.5 w-1.5 rotate-45 bg-gold" />
+      <span className="h-px w-10 bg-gold/60" />
+    </div>
   );
 }

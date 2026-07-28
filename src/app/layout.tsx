@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s — Traditio Co.",
   },
   description:
-    "Traditio Co. exists to equip men of God to faithfully steward their faith, family, work, wealth, and influence for generations to come.",
+    "Traditio Co. exists to build men of God who build legacies that their children's children are proud to inherit.",
   metadataBase: new URL("https://traditio.co"),
   openGraph: {
     title: "Traditio Co.",
@@ -44,6 +44,10 @@ export default function RootLayout({
       className={`${cormorant.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-parchment font-sans text-charcoal">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed inset-3 z-30 border border-navy/15 sm:inset-5"
+        />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
