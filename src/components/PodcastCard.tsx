@@ -1,11 +1,13 @@
 import Image from "next/image";
 import type { Podcast } from "@/data/podcasts";
-import { fetchPodcastFeed } from "@/lib/rss";
+import { fetchPodcastArtwork } from "@/lib/rss";
 
-const linkLabels: Record<keyof Podcast["links"], string> = {
+type PublicLinkKey = "apple" | "spotify" | "youtube" | "website";
+
+const linkLabels: Record<PublicLinkKey, string> = {
   apple: "Apple Podcasts",
   spotify: "Spotify",
-  rss: "RSS Feed",
+  youtube: "YouTube",
   website: "Website",
 };
 
@@ -14,12 +16,12 @@ type PodcastCardProps = {
 };
 
 export default async function PodcastCard({ podcast }: PodcastCardProps) {
-  const feed = podcast.links.rss ? await fetchPodcastFeed(podcast.links.rss) : null;
-  const coverImage = feed?.image ?? podcast.coverImage;
+  const feedImage = podcast.links.rss ? await fetchPodcastArtwork(podcast.links.rss) : undefined;
+  const coverImage = feedImage ?? podcast.coverImage;
 
-  const linkEntries = (Object.entries(podcast.links) as [keyof Podcast["links"], string | undefined][]).filter(
-    (entry): entry is [keyof Podcast["links"], string] => Boolean(entry[1])
-  );
+  const linkEntries = (Object.keys(linkLabels) as PublicLinkKey[])
+    .filter((key) => Boolean(podcast.links[key]))
+    .map((key) => [key, podcast.links[key] as string] as const);
 
   return (
     <article className="flex flex-col gap-6 border border-navy/10 bg-white/40 p-8 sm:flex-row sm:gap-10 sm:p-10">
@@ -67,29 +69,6 @@ export default async function PodcastCard({ podcast }: PodcastCardProps) {
               </li>
             ))}
           </ul>
-        )}
-
-        {feed && feed.episodes.length > 0 && (
-          <ol className="flex flex-col divide-y divide-navy/10 border-t border-navy/10 pt-2 text-left">
-            {feed.episodes.map((episode) => (
-              <li key={episode.title} className="flex flex-col gap-1 py-4">
-                <p className="font-serif text-lg text-navy">{episode.title}</p>
-                <p className="text-xs tracking-wide text-charcoal/50">
-                  {[episode.pubDate, episode.duration].filter(Boolean).join(" · ")}
-                </p>
-                {episode.audioUrl && (
-                  <a
-                    href={episode.audioUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-1 text-xs font-medium tracking-[0.15em] text-gold uppercase underline decoration-gold/40 underline-offset-4 transition-colors hover:text-navy"
-                  >
-                    Listen
-                  </a>
-                )}
-              </li>
-            ))}
-          </ol>
         )}
       </div>
     </article>

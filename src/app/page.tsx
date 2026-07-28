@@ -27,47 +27,79 @@ export default function Home() {
         </FadeIn>
       </section>
 
-      <section aria-labelledby="mission-heading" className="px-6 py-24 sm:px-10 sm:py-32">
-        <div className="mx-auto flex max-w-2xl flex-col gap-24">
+      <section aria-labelledby="mission-heading" className="bg-navy px-6 py-28 sm:px-10 sm:py-36">
+        <FadeIn className="mx-auto flex max-w-2xl flex-col items-center gap-8 text-center">
+          <h2
+            id="mission-heading"
+            className="text-xs font-medium tracking-[0.3em] text-gold uppercase"
+          >
+            Our Mission
+          </h2>
+          <p className="font-serif text-3xl leading-snug text-parchment italic sm:text-4xl">
+            &ldquo;Traditio Co. exists to build men of God who build legacies
+            that their children&rsquo;s children are proud to inherit.&rdquo;
+          </p>
+          <Divider />
+        </FadeIn>
+      </section>
+
+      <section aria-labelledby="what-is-heading" className="px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto flex max-w-4xl flex-col gap-16">
           <FadeIn className="flex flex-col items-center gap-6 text-center">
             <h2
-              id="mission-heading"
+              id="what-is-heading"
               className="font-serif text-3xl text-navy sm:text-4xl"
             >
-              Our Mission
-            </h2>
-            <p className="text-base leading-relaxed text-charcoal/80 sm:text-lg">
-              Traditio Co. exists to build men of God who build legacies that
-              their children&rsquo;s children are proud to inherit.
-            </p>
-          </FadeIn>
-
-          <FadeIn className="flex flex-col items-center gap-6 border-t border-navy/10 pt-24 text-center">
-            <h2 className="font-serif text-3xl text-navy sm:text-4xl">
               What is Traditio?
             </h2>
-            <div className="flex flex-col gap-5 text-base leading-relaxed text-charcoal/80 sm:text-lg">
-              <p>
-                Traditio is the Latin word meaning &ldquo;to hand down&rdquo; or
-                &ldquo;to pass on.&rdquo;
-              </p>
-              <p>
-                We believe every man is building an inheritance. Not merely
-                financial wealth, but faith, wisdom, character, businesses,
-                homes, institutions, and families.
-              </p>
-              <p>
-                Our goal is to help men build things worth passing to their
-                children&rsquo;s children.
-              </p>
-              <p>
-                Everything we create exists to encourage long-term,
-                Christ-centered stewardship that endures for generations.
-              </p>
-            </div>
+            <Divider />
+          </FadeIn>
+
+          <FadeIn>
+            <dl className="grid gap-x-16 gap-y-12 sm:grid-cols-2">
+              {whatIsTraditio.map(({ label, text }) => (
+                <div key={label} className="flex flex-col gap-3 border-t border-navy/15 pt-6">
+                  <dt className="font-serif text-sm tracking-[0.25em] text-gold">
+                    {label}
+                  </dt>
+                  <dd className="text-base leading-relaxed text-charcoal/80 sm:text-lg">
+                    {text}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </FadeIn>
         </div>
       </section>
     </>
   );
 }
+
+const whatIsTraditio = [
+  {
+    label: "I",
+    text: (
+      <>
+        Traditio is the Latin word meaning &ldquo;to hand down&rdquo; or
+        &ldquo;to pass on.&rdquo;
+      </>
+    ),
+  },
+  {
+    label: "II",
+    text: "We believe every man is building an inheritance. Not merely financial wealth, but faith, wisdom, character, businesses, homes, institutions, and families.",
+  },
+  {
+    label: "III",
+    text: (
+      <>
+        Our goal is to help men build things worth passing to their
+        children&rsquo;s children.
+      </>
+    ),
+  },
+  {
+    label: "IV",
+    text: "Everything we create exists to encourage long-term, Christ-centered stewardship that endures for generations.",
+  },
+];
