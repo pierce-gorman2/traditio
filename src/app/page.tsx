@@ -36,7 +36,7 @@ export default function Home() {
             Our Mission
           </h2>
           <p className="font-serif text-3xl leading-snug text-parchment italic sm:text-4xl">
-            &ldquo;Traditio Co. exists to build men of God who build legacies
+            &ldquo;Traditio Co. exists to equip men of God to build legacies
             that their children&rsquo;s children are proud to inherit.&rdquo;
           </p>
           <Divider />
@@ -53,6 +53,16 @@ export default function Home() {
               What is Traditio?
             </h2>
             <Divider />
+          </FadeIn>
+
+          <FadeIn className="mx-auto max-w-2xl text-center">
+            <p className="font-serif text-xl leading-relaxed text-navy italic sm:text-2xl">
+              Traditio Co. is a Protestant Christian company. We hold to
+              thousand-year thinking &mdash; the conviction that Christ&rsquo;s
+              Kingdom advances through the faithful, generational labor of His
+              people, and that every generation builds toward an inheritance
+              the next will carry forward.
+            </p>
           </FadeIn>
 
           <FadeIn>

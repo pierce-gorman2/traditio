@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s — Traditio Co.",
   },
   description:
-    "Traditio Co. exists to build men of God who build legacies that their children's children are proud to inherit.",
+    "Traditio Co. exists to equip men of God to build legacies that their children's children are proud to inherit.",
   metadataBase: new URL("https://traditio.co"),
   openGraph: {
     title: "Traditio Co.",
