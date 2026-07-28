@@ -57,11 +57,11 @@ export default function Home() {
 
           <FadeIn className="mx-auto max-w-2xl text-center">
             <p className="font-serif text-xl leading-relaxed text-navy italic sm:text-2xl">
-              Traditio Co. is a Protestant Christian company. We hold to
-              thousand-year thinking &mdash; the conviction that Christ&rsquo;s
-              Kingdom advances through the faithful, generational labor of His
-              people, and that every generation builds toward an inheritance
-              the next will carry forward.
+              Traditio Co. is a Christian company. We hold to thousand-year
+              thinking: the conviction that Christ&rsquo;s Kingdom advances
+              through the faithful, generational labor of His people, and
+              that every generation builds toward an inheritance the next
+              will carry forward.
             </p>
           </FadeIn>
 
