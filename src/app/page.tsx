@@ -46,6 +46,9 @@ export default function Home() {
             relevant for the next thousand years.
           </p>
           <Divider className="mt-2" />
+          <p className="mt-2 font-serif text-2xl leading-snug text-parchment italic sm:text-3xl">
+            Traditio Co. exists to build for the next thousand years.
+          </p>
         </FadeIn>
       </section>
 
