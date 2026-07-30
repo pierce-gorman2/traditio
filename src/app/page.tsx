@@ -27,19 +27,25 @@ export default function Home() {
         </FadeIn>
       </section>
 
-      <section aria-labelledby="mission-heading" className="bg-navy px-6 py-28 sm:px-10 sm:py-36">
-        <FadeIn className="mx-auto flex max-w-2xl flex-col items-center gap-8 text-center">
-          <h2
-            id="mission-heading"
-            className="text-xs font-medium tracking-[0.3em] text-gold uppercase"
-          >
-            Our Mission
-          </h2>
-          <p className="font-serif text-3xl leading-snug text-parchment italic sm:text-4xl">
-            &ldquo;Traditio Co. exists to equip men of God to build legacies
-            that their children&rsquo;s children are proud to inherit.&rdquo;
+      <section aria-label="What we build" className="bg-navy px-6 py-28 sm:px-10 sm:py-36">
+        <FadeIn className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
+          <p className="font-serif text-2xl leading-snug text-parchment sm:text-3xl">
+            We build <span className="text-gold">businesses</span> that will
+            have an impact for the next thousand years.
           </p>
-          <Divider />
+          <p className="font-serif text-2xl leading-snug text-parchment sm:text-3xl">
+            We build <span className="text-gold">homes</span> that will last
+            for the next thousand years.
+          </p>
+          <p className="font-serif text-2xl leading-snug text-parchment sm:text-3xl">
+            We build <span className="text-gold">men</span> whose legacy will
+            endure for the next thousand years.
+          </p>
+          <p className="font-serif text-2xl leading-snug text-parchment sm:text-3xl">
+            We build <span className="text-gold">media</span> that will be
+            relevant for the next thousand years.
+          </p>
+          <Divider className="mt-2" />
         </FadeIn>
       </section>
 
