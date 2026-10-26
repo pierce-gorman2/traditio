@@ -15,7 +15,10 @@ export default function Footer() {
           />
           <p className="font-serif text-2xl text-navy">Traditio Co.</p>
         </div>
-        <p className="text-sm text-charcoal/60">Building for the next thousand years.</p>
+        <p className="max-w-md text-sm text-charcoal/60">
+          on a mission to glorify God by creating innumerable opportunities for
+          our team.
+        </p>
         <Divider />
         <p className="text-xs text-charcoal/40">
           &copy; {new Date().getFullYear()} Traditio Co. All rights reserved.

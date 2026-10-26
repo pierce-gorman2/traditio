@@ -17,14 +17,6 @@ export default function Home() {
         </p>
         <Divider className="mt-3" />
       </FadeIn>
-
-      <FadeIn
-        delayMs={600}
-        className="absolute bottom-10 flex flex-col items-center gap-3 text-charcoal/40"
-      >
-        <span className="text-[11px] font-medium tracking-[0.3em] uppercase">Scroll</span>
-        <span aria-hidden="true" className="block h-10 w-px bg-charcoal/20" />
-      </FadeIn>
     </section>
   );
 }
