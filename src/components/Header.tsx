@@ -18,6 +18,14 @@ export default function Header() {
             Traditio Co.
           </span>
         </Link>
+        <nav aria-label="Primary">
+          <Link
+            href="/about"
+            className="text-xs font-medium tracking-[0.15em] text-charcoal/70 uppercase transition-colors hover:text-gold"
+          >
+            About
+          </Link>
+        </nav>
       </div>
     </header>
   );

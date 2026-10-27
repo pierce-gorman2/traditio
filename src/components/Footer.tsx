@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Divider from "./Divider";
 
 export default function Footer() {
@@ -20,6 +21,14 @@ export default function Footer() {
           our team.
         </p>
         <Divider />
+        <nav aria-label="Footer">
+          <Link
+            href="/about"
+            className="text-xs font-medium tracking-[0.15em] text-charcoal/70 uppercase transition-colors hover:text-gold"
+          >
+            About
+          </Link>
+        </nav>
         <p className="text-xs text-charcoal/40">
           &copy; {new Date().getFullYear()} Traditio Co. All rights reserved.
         </p>
