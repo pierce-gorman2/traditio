@@ -5,7 +5,7 @@ import FadeIn from "@/components/FadeIn";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Traditio Co. is a Christian company whose aim is to glorify God by creating innumerable opportunities for its team.",
+    "Traditio Co. is a Christian company that exists to glorify God by creating innumerable opportunities for our team.",
 };
 
 const bodyClass =
@@ -24,12 +24,17 @@ export default function AboutPage() {
 
         <FadeIn className="flex flex-col gap-8">
           <p className={bodyClass}>
-            Traditio Co. is a Christian company whose aim is to glorify God by
-            creating innumerable opportunities for its team. The word
-            &ldquo;Traditio&rdquo; is Latin for &ldquo;to hand down&rdquo; or
-            &ldquo;to deliver over.&rdquo; We make it our aim to create
-            opportunities and hand them down to those on our team. We have a
-            saying in our company:{" "}
+            Traditio Co. is a Christian company that exists to glorify God by
+            creating innumerable opportunities for our team.
+          </p>
+
+          <p className={bodyClass}>
+            Our name comes from the Latin <em>traditio</em>: &ldquo;a handing
+            down&rdquo; or &ldquo;a delivering over.&rdquo; It shares its root
+            with the word Paul used when he wrote that he delivered to the
+            church what he had first received (1 Cor. 15:3). That&rsquo;s our
+            model. We receive opportunity as a gift, and we hand it down.
+            Around here we say{" "}
             <em className="text-navy">
               the ceiling is as high as you&rsquo;re willing to climb.
             </em>
@@ -37,11 +42,11 @@ export default function AboutPage() {
 
           <p className={bodyClass}>
             Our founders, Pierce and Hannah Gorman, are Reformed in their
-            theology and draw from the Reformation the conviction that there is
-            no distinction between the secular and the sacred. Knowing this,
-            they aim to be missionaries in the marketplace, using Traditio Co.
-            as a ministry whose primary purpose is to show Jesus to those
-            around them.
+            theology. With the Reformers, they believe no honest calling is less
+            sacred than another, no matter how &ldquo;lowly,&rdquo; because all
+            of life is lived before the face of God. So they see the
+            marketplace as a mission field and Traditio Co. as a way to make
+            Jesus known to everyone it touches.
           </p>
 
           <p className={bodyClass}>
