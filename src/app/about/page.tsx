@@ -56,10 +56,10 @@ export default function AboutPage() {
             <p className={bodyClass}>
               Our mission is to bring this nation back to King Jesus and back
               to its Christian roots, for the sake of our children&rsquo;s
-              children. We are Reformed and postmillennial, and that means that
-              we believe Christ&rsquo;s Kingdom will fill the earth, and that
-              God is pleased to bring it about through the faithful labor of
-              His people. So we labor with confidence knowing that our King wins
+              children. We are Reformed and postmillennial in our theology, and
+              that means that we believe Christ&rsquo;s Kingdom will fill the
+              earth, and that God is pleased to bring it about through the
+              faithful labor of His people. So we labor with confidence knowing that our King wins
               in the end.
             </p>
           </section>
