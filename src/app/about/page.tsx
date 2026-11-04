@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 };
 
 const bodyClass =
-  "font-serif text-xl font-medium leading-[1.75] text-charcoal sm:text-2xl sm:leading-[1.7]";
+  "font-serif text-lg font-medium leading-[1.75] text-charcoal sm:text-xl sm:leading-[1.75]";
 
-const headingClass = "font-serif text-3xl font-medium text-navy sm:text-4xl";
+const headingClass = "font-serif text-2xl font-bold text-navy sm:text-3xl";
 
 const practicalSteps = [
   "Proclaiming the truth through podcasts, blogs, writing, and social media.",
@@ -56,10 +56,10 @@ export default function AboutPage() {
             <p className={bodyClass}>
               Our mission is to bring this nation back to King Jesus and back
               to its Christian roots, for the sake of our children&rsquo;s
-              children. We are postmillennial, and that means that we believe
-              Christ&rsquo;s Kingdom will fill the earth, and that God is
-              pleased to bring it about through the faithful labor of His
-              people. So we labor with confidence knowing that our King wins
+              children. We are Reformed and postmillennial, and that means that
+              we believe Christ&rsquo;s Kingdom will fill the earth, and that
+              God is pleased to bring it about through the faithful labor of
+              His people. So we labor with confidence knowing that our King wins
               in the end.
             </p>
           </section>
