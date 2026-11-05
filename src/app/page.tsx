@@ -12,7 +12,8 @@ export default function Home() {
           Traditio Co.
         </h1>
         <p className="max-w-xl font-serif text-xl italic tracking-wide text-navy/70 sm:text-2xl">
-          building for the next thousand years.
+          on a mission to glorify God by creating innumerable opportunities for
+          our team.
         </p>
         <Divider className="mt-3" />
       </FadeIn>
