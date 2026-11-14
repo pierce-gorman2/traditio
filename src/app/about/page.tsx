@@ -72,7 +72,7 @@ export default function AboutPage() {
               We have a vision to build for the next thousand years.
             </p>
             <p className={bodyClass}>
-              The new Christendom will be built by faithful families, faithful
+              Christendom will be built by faithful families, faithful
               churches, and faithful businesses.
             </p>
             <p className={bodyClass}>
