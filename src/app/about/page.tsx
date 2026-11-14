@@ -76,9 +76,9 @@ export default function AboutPage() {
               churches, and faithful businesses.
             </p>
             <p className={bodyClass}>
-              Traditio Co. will join in this mission by building faithful
-              businesses that create opportunities for faithful families and
-              fund faithful churches.
+              Traditio Co. will join in the building of Christendom by building
+              faithful businesses that create opportunities for faithful
+              families and fund faithful churches.
             </p>
           </section>
         </FadeIn>
