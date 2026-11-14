@@ -57,6 +57,27 @@ export default function AboutPage() {
           </p>
         </FadeIn>
 
+        <FadeIn>
+          <section
+            aria-labelledby="our-vision"
+            className="flex flex-col gap-6 border-t border-navy/10 pt-16"
+          >
+            <h2
+              id="our-vision"
+              className="font-serif text-3xl font-medium text-navy sm:text-4xl"
+            >
+              Our Vision
+            </h2>
+            <p className={bodyClass}>
+              We have a vision to build for the next thousand years. We believe
+              the new Christendom will be built by faithful families, faithful
+              churches, and faithful businesses. Our mission is to do our part
+              by building faithful businesses that create opportunities for
+              faithful families and fund faithful churches.
+            </p>
+          </section>
+        </FadeIn>
+
         <FadeIn className="flex flex-col items-center gap-3 text-center">
           <Divider />
           <p className="mt-3 font-serif text-2xl text-navy italic sm:text-3xl">
