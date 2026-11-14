@@ -69,11 +69,16 @@ export default function AboutPage() {
               Our Vision
             </h2>
             <p className={bodyClass}>
-              We have a vision to build for the next thousand years. We believe
-              the new Christendom will be built by faithful families, faithful
-              churches, and faithful businesses. Our mission is to do our part
-              by building faithful businesses that create opportunities for
-              faithful families and fund faithful churches.
+              We have a vision to build for the next thousand years.
+            </p>
+            <p className={bodyClass}>
+              The new Christendom will be built by faithful families, faithful
+              churches, and faithful businesses.
+            </p>
+            <p className={bodyClass}>
+              Traditio Co. will join in this mission by building faithful
+              businesses that create opportunities for faithful families and
+              fund faithful churches.
             </p>
           </section>
         </FadeIn>
